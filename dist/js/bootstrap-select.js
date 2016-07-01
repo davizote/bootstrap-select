@@ -294,7 +294,9 @@
     noneSelectedText: 'Nothing selected',
     noneResultsText: 'No results matched {0}',
     countSelectedText: function (numSelected, numTotal) {
-      return (numSelected == 1) ? "{0} item selected" : "{0} items selected";
+        return (numSelected == 1)
+            ? "{0} " + this.countSingularSelectedText
+            : "{0} " + this.countPluralSelectedText;
     },
     maxOptionsText: function (numAll, numGroup) {
       return [
@@ -328,6 +330,8 @@
     iconBase: 'glyphicon',
     tickIcon: 'glyphicon-ok',
     showTick: false,
+    countSingularSelectedText: "item selected",
+    countPluralSelectedText: "items selected",
     template: {
       caret: '<span class="caret"></span>'
     },
