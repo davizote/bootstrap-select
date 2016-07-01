@@ -44,6 +44,26 @@ Options can be passed via data attributes or JavaScript. For data attributes, ap
     </td>
   </tr>
   <tr>
+    <td>countSingularSelectedText</td>
+    <td>string</td>
+    <td><code>'item selected'</code></td>
+    <td>
+      <p>Sets the string for the text displayed when selectedTextFormat is <code>count</code> or <code>count > 
+      #</code>.</p>
+      <p>When <code>countSelectedText</code> is established, this option it's not going to be used.</p>
+    </td>
+  </tr>
+  <tr>
+    <td>countPluralSelectedText</td>
+    <td>string</td>
+    <td><code>'items selected'</code></td>
+    <td>
+      <p>Sets the string for the text displayed when selectedTextFormat is <code>count</code> or <code>count > 
+      #</code>.</p>
+      <p>When <code>countSelectedText</code> is established, this option it's not going to be used.</p>
+    </td>
+  </tr>
+  <tr>
     <td>dropupAuto</td>
     <td>boolean</td>
     <td><code>true</code></td>
